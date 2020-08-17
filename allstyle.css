@@ -1,0 +1,762 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Unna&display=swap');
+/* ここからallstyle */
+p, body, h1, h2, h3, h4, ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+img {
+	vertical-align: middle;
+	border-style: none;
+	max-width: 100%;
+	height: auto;
+}
+body {
+	display: block;
+	background-color: #fff;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.9;
+	letter-spacing: 0.08rem;
+	color: #333;
+	font-family: YuGothic, '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+}
+ul, ol, dl {
+	list-style-type: none;
+}
+*, *::before, *::after {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a ,a:link, a:visited, a:hover, a:active{
+	text-decoration: none;
+	color: #333;
+}
+.wrapper {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1080px;
+}
+.inner {
+	margin: 0 auto;
+}
+/* ここからheader */
+header {
+	margin: 0;
+	padding: 0 1rem;
+	display: block;
+}
+.gnav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 20;
+}
+.nav-box {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1080px;
+	padding: 20px;
+	height: 80px;
+}
+.logo h1  {
+	display: flex;
+	align-items: center;
+	font-weight: normal;
+	line-height: 1.6;
+	font-size: 16px;
+	letter-spacing: 0.15rem;
+	font-family: 'Asap', sans-serif;
+}
+.logo a {
+	display: block;
+}
+.logo a:hover {
+	opacity: 0.7;
+}
+.nav-box ul {
+	display: flex;
+	align-items: center;
+}
+.nav-box li a {
+	display: inline-block;
+	height: 50px;
+	font-size: 15px;
+	letter-spacing: 0.12rem;
+	line-height: 50px;
+	font-family: 'Asap', sans-serif;
+	
+}
+.nav-box li {
+	margin: 0 1.5rem;
+	display: list-item;
+}
+.nav-box li a:hover {
+	border-bottom: 1px solid #333;
+}
+.nav-box li a:active {
+	opacity: 0.5;
+}
+/* ここまでheader */
+h2  {
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 0.4rem;
+	line-height: 1;
+	font-family: 'Unna', serif;
+}
+p.subtitle {
+	font-size: 16px;
+	letter-spacing: 0.3rem;
+	margin-bottom: 50px;
+}
+.topContact {
+	margin: 160px 0;
+	text-align: center;
+}
+.topContact .inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 800px;
+}
+.tel, .mail {
+	font-size: 16px;
+	font-family: 'Asap', sans-serif;
+	padding: 20px 0;
+	border-radius: 5px;
+	background-color: #eee;
+	width: 350px;
+}
+.tel .large, .mail .large {
+	font-size: 24px;
+}
+footer {
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-color: #bacca6;
+	padding: 40px 0;
+	width: 100%;
+	font-family: 'Asap', sans-serif;
+}
+/* ここまでallstyle */
+/* ここからindex */
+.topMain {
+	margin-bottom: 120px;
+	margin-top: 30px;
+}
+.topMain-inner {
+	max-width: 1080px;
+	height: 500px;
+	margin-bottom: 120px;
+	position: relative;
+}
+.topMain-copy .large {
+	position: absolute;
+	top: 250px;
+	left: 0px;
+	z-index: 2;
+	font-size: 70px;
+	letter-spacing: 1.2rem;
+	font-family: 'Unna', serif;
+}
+.topMain-copy .small {
+	position: absolute;
+	top: 360px;
+	left: 0px;
+	z-index: 2;
+	font-size: 20px;
+	letter-spacing: 0.15rem;
+}
+img.mainimg {
+	position: absolute;
+	top: 50px;
+	right: 0px;
+}
+.topAbout-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+img.topAbout-left {
+	margin-left: 50px;
+}
+.topAbout-right {
+	max-width: 560px;
+	padding: 60px;
+	height: auto;
+	background-color: #eceee9;
+}
+
+.topAbout {
+	margin: 140px 0;
+}
+
+.topAbout-right p {
+	margin-bottom: 1.5rem;
+}
+.viewmore-btn p {
+	margin-bottom: 0px;
+}
+.viewmore-btn a {
+	transition: all 0.3s;
+	display: block;
+}
+.viewmore-btn a:hover {
+	transform: translate(8px,0);
+}
+.viewmore-btn {
+	margin-top: 2.5rem;
+	position: relative;
+}
+.topAbout .viewmore-btn img {
+	transform: translate(0,-25%);
+	transform: translate(0,-70%);
+}
+.topWorks {
+	text-align: center;
+	background-color: #eceee9;
+	padding-bottom: 120px;
+}
+.topWorks h2 {
+	padding-top: 100px;
+}
+.topWorks-inner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+.topWorks .viewmore-btn img {
+	transform: translate(25%,-70%);
+}
+/* ここまでindex */
+/* ここからAboutページ */
+.subMain h2 {
+	text-align: center;
+}
+.subMain .subtitle {
+	text-align: center;
+}
+.subMain {
+	margin: 140px 0;
+}
+.topAbout-inner {
+	margin-top: 80px;
+}
+.profile-flexAll {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.profile {
+	max-width: 500px;
+	height: auto;
+	padding: 60px;
+	background-color: #eceee9;
+}
+.profile p {
+	margin: 1.5rem 0;
+}
+h3 {
+    font-family: 'Unna', serif;
+    font-size: 30px;
+    letter-spacing: .3rem;
+    line-height: 1;
+    font-weight: normal;
+    border-left: 15px solid #bacca6;
+    padding-left: 15px;
+    padding-right: 10px;
+    float: left;
+    margin-bottom: 60px;
+}
+
+.title-sub-page {
+	font-size: 16px;
+	letter-spacing: .2rem;
+	line-height: 34px;
+	margin-bottom: 60px;
+}
+h4 {
+	font-family: 'Unna', serif;
+	text-align: center;
+	font-size: 24px;
+	letter-spacing: 0.2rem;
+	line-height: 1;
+	margin: 20px auto;
+	font-weight: normal;
+}
+.skills-flex-inner p {
+	font-size: 15px;
+	line-height: 1.8;
+	letter-spacing: 0.07rem;
+}
+.skills-flex-inner {
+	text-align: center;
+}
+.skills-flexAll {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.skills-tool-flex {
+	display: flex;
+	justify-content: flex-start;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 35px;
+}
+.skills-tool {
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+	margin: 0 5px;
+	background-color: #686666;
+}
+#career {
+	margin-top: 160px;
+}
+.career-flex {
+	margin: 0 auto;
+	max-width: 900px;
+}
+.career-flexInner-left ,.career-flexInner-right{
+	font-size: 18px;
+	padding-top: 50px;
+}
+
+/* ここからworksページ */
+#web {
+	margin-top: -50px;
+	margin-bottom: 140px;
+}
+#print {
+	margin-bottom: 140px;
+}
+#vision {
+	padding: 120px 0;
+	background-color: #eceee9;
+}
+.works-Vision img {
+}
+.works-Vision {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+.vision h2  ,.vision .subtitle{
+	text-align: center;
+}
+.works-Vision .text {
+	width: 50%;
+}
+.text p {
+	margin: 1.5rem 0;
+}
+.works-box-hovInner  {
+	position: relative;
+}
+.works-box-hov {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	transition: all 0.2s;
+	color: transparent;
+}
+.works-hov-main {
+	margin-top: 20%;
+}
+.works-box-hov:hover {
+	background-color: rgba(255,255,255,0.9);
+	color: #333;
+}
+/* ここまでworksページ */
+/* ここからworks下層ページ */
+.works {
+	margin: 0 auto;
+	max-width: 650px;
+}
+/* サイドナビゲーション */
+.worksMenu {
+	position: relative;
+	position: fixed;
+}
+.worksMenu-all {
+	position: absolute;
+	top: 0px;
+	left: -30px;
+}
+.workspage-submain .subMain {
+	margin: 140px 0 80px;
+}
+.worksMenu-list a {
+	display: block;
+	margin: 15px 0;
+	padding: 5px 0;
+	width: 130px;
+	font-size: 18px;
+	letter-spacing: 0.2rem;
+	line-height: 34px;
+	font-family: 'Unna', serif;
+}
+.worksMenu-list a:hover {
+	opacity: 0.5;
+}
+/* ここまでサイドナビゲーション */
+/* 制作実績説明 */
+.works dl {
+	display: flex;
+	margin: 100px 0;
+	flex-wrap: wrap;
+	font-size: 14px;
+}
+.works dt {
+	display: block;
+	float: left;
+	width: 20%;
+	color: #afafaf;
+}
+.works dd {
+	width: 80%;
+	margin-bottom: 50px;
+}
+
+/* 641px以上で表示（pc用） */
+@media screen and (min-width:601px){
+dl {
+	display: block;
+	margin: 0 auto 100px;
+	max-width: 900px;
+}
+.career-flex {
+	display: flex;
+}
+.career-flexInner-left {
+	width: 15%;
+	padding-right: 8%;
+	white-space: nowrap;
+}
+.career-flexInner-right {
+	width: 85%;
+	border-left: 2px solid #ddd;
+	font-size: 14px;
+	padding-left: 8%;
+	position: relative;
+}
+.career-flexInner-right:before {
+	content: "";
+	display: block;
+	width: 15px;
+	border-radius: 50%;
+	height: 15px;
+	background-color: #bacca6;
+	position: absolute;
+	left: -8px;
+	transform: translateY(50%);
+}
+.global-nav {
+	display: none;
+}
+.pagetop {
+	display: none;
+}
+}
+/* ここまで641px以上で表示（pc用） */
+
+/* ここから480px以下で表示（sp用） */
+@media screen and (max-width:480px){
+header {
+	padding-top: 10px;
+	margin: 0 1rem;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 20;
+	right: 0px;
+	height: 30px;
+}
+body {
+	font-size: 80%;
+}
+.gnav {
+	position: fixed;
+	top: 0px;
+	background-color: transparent;
+	width: 100%;
+	height: 30px;
+}
+.nav-box {
+	max-width: 600px;
+	margin: 0 auto;
+	height: 30px;
+}
+h1.logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+h1 a {
+	font-size: 75%;
+	letter-spacing: 0.04rem;
+}
+.gnav ul {
+	display: none;
+}
+.wrapper {
+	margin: 0 1rem;
+	width: auto;
+}
+h2 {
+	font-size: 2rem;
+}
+.topMain-inner .mainimg {
+	width: 300px;
+	top: 40px;
+	right: -10px;
+}
+.topMain-copy .large {
+	top: 150px;
+	font-size: 2rem;
+	letter-spacing: 0.3rem;
+}
+.topMain-copy .small {
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+	top: 200px;
+}
+.topMain-inner {
+	height: 250px;
+	margin-bottom: 60px;
+}
+.topAbout-right {
+	padding: 40px 20px;
+}
+.topAbout-right h2 {
+	font-size: 2rem;
+	text-align: right;
+	letter-spacing: 0.3rem;
+}
+.topAbout-right .subtitle {
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 40px;
+}
+.topAbout-inner {
+	position: relative;
+	flex-direction: column;
+}
+.topAbout-left img {
+	position: absolute;
+	top: -45px;
+	left: 30px;
+	width: 110px;
+	margin-left: 0px;
+}
+.topAbout {
+	margin-bottom: 60px;
+}
+.topWorks {
+	margin: 80px 0;
+	padding-bottom: 80px;
+}
+.topWorks-inner {
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.works-box-hovInner {
+	margin-bottom: 40px;
+}
+.topWorks .viewmore-btn {
+	transform: translateX(-10%);
+}
+#contact {
+	margin: 40px auto;
+}
+#contact  .inner {
+	max-width: 600px;
+	flex-direction: column;
+	width: 80%;
+}
+.tel, .mail {
+	width: 250px;
+	margin: 20px 0;
+	font-size: 12px;
+}
+.tel .large, .mail .large {
+	font-size: 16px;
+}
+#contact p.subtitle {
+	margin-bottom: 20px;
+}
+#skills, #career {
+	padding-bottom: 40px;
+	margin-top: 50px;
+}
+.subMain {
+	margin: 40px 0 0;
+	padding-bottom: 40px;
+}
+.subMain h2 {
+	margin: 0;
+	padding-top: 30px;
+}
+.subMain .subtitle {
+	margin: 0 0 40px;
+	font-size: 12px;
+}
+.profile-flexAll {
+	flex-direction: column;
+}
+.profile-img ,.vision-photo{
+	margin: 0 auto;
+	align-items: center;
+	height: auto;
+	padding-bottom: 50px;
+	width: 80%;
+}
+.profile  {
+	padding: 40px 20px;
+	width: 100%;
+}
+.title-sub-page {
+	margin-bottom: 20px;
+	font-size: 12px;
+	letter-spacing: 0.02rem;
+}
+.title-sub-page h3 {
+	margin-bottom: 0px;
+}
+.skills-flexAll {
+	flex-direction: column;
+}
+.skills-flex-inner {
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	width: 100%;
+}
+.skills-flex-inner h4 {
+	margin: 25px 0 20px;
+	font-size: 22px;
+}
+.skills-flex-inner p {
+	margin: 10px 0;
+	font-size: 13px;
+}
+.career-flexInner-left, .career-flexInner-right {
+	padding: 10px 0 0;
+}
+.career-flexInner-left {
+	font-size: 16px;
+}
+.career-flexInner-right {
+	font-size: 12px;
+	margin-bottom: 40px;
+}
+.works-Vision {
+	padding: 0;
+	flex-direction: column;
+}
+#vision {
+	padding: 40px 0;
+	margin-top: 0px;
+}
+.works-Vision .text {
+	padding: 0 20px;
+}
+.vision-photo {
+	padding-bottom: 40px;
+}
+#print ,#web{
+	margin-bottom: 40px;
+}
+.vision .subtitle {
+	font-size: 12px;
+}
+h4.worksbox-h4 {
+	font-size: 18px;
+}
+.works-Vision .text {
+	width: 100%;
+}
+.workspage-submain .subMain {
+	margin-top: 80px;
+	margin-bottom: 0px;
+}
+.workspage-submain .subtitle {
+	margin-bottom: 0px;
+}
+.worksMenu {
+	position: static;
+}
+.worksMenu-all {
+	position: static;
+}
+.worksMenu-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.worksMenu-list a {
+	padding: 20px 0 0;
+	margin: 0;
+	width: 105px;
+	border-bottom: 1px solid #333;
+	letter-spacing: 0.2rem;
+	transition: 0.2s;
+	font-size: 16px;
+}
+.works {
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+.works dt {
+	float: none;
+	width: 100%;
+}
+.works dd {
+	font-size: 12px;
+	width: 100%;
+	flex-direction: column;
+}
+.works dl {
+	margin: 40px 0;
+}
+.pagetop {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background-color: #bacca6;
+	border-radius: 50%;
+	opacity: 0.7;
+	text-align: center;
+	font-size: 30px;
+	vertical-align: middle;
+	transform: rotate(-90deg);
+	line-height: 50px;
+}
+.pagetop a {
+	color: #fff;
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+}
